@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+	<META content"text/htmel; charset=utf-8" http-equiv="Content-type"	/>
+	<LINK href="stijlblad.css" rel="stylesheet"type="text/css"	/>
+	<TITLE>colicss site</TITLE>
+	</HEAD>
+	<BODY>
+	<div class="topnav">
+ 		 <a class="project4.html" href="project4.html">home</a>
+ 		 <a href="fotosbedrijf.html">foto's bedrijf</a>
+ 		 <a href="klantenpagina.html">klantenpagina</a>
+ 		 <a href="infohosting.html">info over hosting</a>
+ 		 <a href="infocloud.html">info over cloud</a>
+ 		 <a href="socialmedia.html">socialmedia</a>
+  		<a href="contactpagina.html">contactpagina</a>
+	</div>
+<div id="vlek">
+<h2>Hosting paketen:</h2>
+<p>
+<h4>Brons</h4>
+Pakket Brons: 10 GB HDD, 512MB RAM, 1 Core, 100GB dataverkeer per maand (5,95 euro per maand)<BR>
+<h4>Silver</h4>
+Pakket Silver: 20 GB HDD, 1048MB RAM, 2 Cores, 200GB dataverkeer per maand (7,95 euro per maand)<BR>
+<h4>Goud</h4>
+Pakket Goud: 50 GB HDD, 2048MB RAM, 4 Cores, onbeperkt dataverkeer per maand (10,95 euro per maand)</p>
+<select id="selecter">
+        <option id="Brons" value="1" >Brons</option>
+        <option id="Silver" value="2" >Silver</option>
+        <option id="Gold" value="3" >Goud</option>
+    </select>
+    <input id="stuff" type="text" size="1" value=""/>
+    <label>maanden</label><button id="choose" onclick="check();">bereken</button><br>
+    <p>prijs:<a id="output"></a></p>
+<BR></BR><BR>
+</div>
+<div id="vlek2">
+	<a href="https://twitter.com/intent/tweet?screen_name=ColicssHosting&ref_src=twsrc%5Etfw" class="twitter-mention-button" data-show-count="false">Tweet to @ColicssHosting</a>
+	<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+		<picture>
+			<a href= "https://nl-nl.facebook.com/coli.css.92" target="_blank"> 
+			<img src="facebok.jpg" alt="veesbenk" style= "height: 50px; width: 120px;"
+			<p id="vasbonk"> </a>
+		</picture>
+		<picture>
+			<a href= "https://www.instagram.com/acolico4/" target="_blank">
+			<img src="instagram.jpg" alt="instagram"style= "height: 50px; width: 120px;">
+			<p id="insta">
+		</picture>
+</div>
+	</BODY>
+	<script type="text/javascript">
+		
+		var a = 0;
+    var b = 0;
+    var c = 0;
+
+function check(){
+
+    var yourSelect = document.getElementById('selecter').value;
+       if (yourSelect == 1) {
+        a = 5.95;
+       } else {
+        if(yourSelect == 2){
+            a = 7.95;
+        } else {
+            a = 10.95;
+        }
+       }
+       reken()
+}
+ function reken(){
+    var inputstuff = document.getElementById('stuff').value;
+    b = inputstuff;
+    calculator();
+ 
+ }
+ function calculator(){
+    c = (a * b);
+    document.getElementById('output').innerHTML = c
+}
+	</script>
+	</HTML>

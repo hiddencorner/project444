@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+	<META content"text/htmel; charset=utf-8" http-equiv="Content-type"	/>
+	<LINK href="stijlblad.css" rel="stylesheet"type="text/css"	/>
+	<TITLE>colicss site</TITLE>
+</HEAD>
+	<BODY>
+	<div class="topnav">
+ 		 <a class="project4.html" href="project4.html">home</a>
+ 		 <a href="fotosbedrijf.html">foto's bedrijf</a>
+ 		 <a href="klantenpagina.html">klantenpagina</a>
+ 		 <a href="infohosting.html">info over hosting</a>
+ 		 <a href="infocloud.html">info over cloud</a>
+ 		 <a href="socialmedia.html">socialmedia</a>
+  		<a href="contactpagina.html">contactpagina</a>
+	</div>
+<div id="vlek">
+<h2>Cloud pakketten:</h2>
+<h4>geel</h4>
+<p>
+ Pakket Geel: 10GB opslag (4 euro per maand)<BR>
+<h4>Oranje</h4>
+Pakket Oranje: 100GB opslag (6 euro per maand)<BR>
+
+<p>
+<h4>Groen</h4> 1TB opslag (10 euro per maand)</p>
+<html>
+
+<title>HTML Calculator</title>
+
+<select id="selecter">
+        <option id="Brons" value="1" >geel</option>
+        <option id="Silver" value="2" >groen</option>
+        <option id="Gold" value="3" >Goud</option>
+    </select>
+    <input id="stuff" type="text" size="1" value=""/>
+    <label>maanden</label><button id="choose" onclick="check();">bereken</button><br>
+    <p>prijs:&euro;<a id="output"></a></p>
+<BR></BR>
+</div>
+
+<div id="vlek2">
+	<a href="https://twitter.com/intent/tweet?screen_name=ColicssHosting&ref_src=twsrc%5Etfw" class="twitter-mention-button" data-show-count="false">Tweet to @ColicssHosting</a>
+	<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+		<picture>
+			<a href= "https://nl-nl.facebook.com/coli.css.92" target="_blank"> 
+			<img src="facebok.jpg" alt="veesbenk" style= "height: 50px; width: 120px;"
+			<p id="vasbonk"> </a>
+		</picture>
+		<picture>
+			<a href= "https://www.instagram.com/acolico4/" target="_blank">
+			<img src="instagram.jpg" alt="instagram"style= "height: 50px; width: 120px;">
+			<p id="insta">
+		</picture>
+</div>
+
+	</BODY>
+	<script type="text/javascript">
+		
+		var a = 0;
+    var b = 0;
+    var c = 0;
+
+function check(){
+
+    var yourSelect = document.getElementById('selecter').value;
+       if (yourSelect == 1) {
+        a = 4;
+       } else {
+        if(yourSelect == 2){
+            a = 6;
+        } else {
+            a = 10;
+        }
+       }
+       reken()
+}
+ function reken(){
+    var inputstuff = document.getElementById('stuff').value;
+    b = inputstuff;
+    calculator();
+ 
+ }
+ function calculator(){
+    c = (a * b);
+    document.getElementById('output').innerHTML = c
+}
+	</script>
+	</HTML>

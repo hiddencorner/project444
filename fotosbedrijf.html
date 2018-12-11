@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+	<META content"text/htmel; charset=utf-8" http-equiv="Content-type"	/>
+	<LINK href="stijlblad.css" rel="stylesheet"type="text/css"	/>
+	<TITLE>colicss site</TITLE>
+	</HEAD>
+	<BODY>
+	<div class="topnav">
+ 		 <a class="project4.html" href="project4.html">home</a>
+ 		 <a href="fotosbedrijf.html">foto's bedrijf</a>
+ 		 <a href="klantenpagina.html">klantenpagina</a>
+ 		 <a href="infohosting.html">info over hosting</a>
+ 		 <a href="infocloud.html">info over cloud</a>
+ 		 <a href="socialmedia.html">socialmedia</a>
+  		<a href="contactpagina.html">contactpagina</a>
+	</div>
+</div>
+<div id="vlek">
+
+	<h2>het Colicss huis</h2>
+
+<img id="myImg" src="colicsshuis.jpg" alt="het grandiose colicsshuis" style="width:100%;max-width:300px">
+
+<div id="myModal" class="modal">
+
+  <span class="close">&times;</span>
+
+  <img class="modal-content" id="img01">
+
+  <div id="caption"></div>
+</div>
+
+
+
+
+
+
+<picture id="chuis3">
+	<h2>colicss server</h2>
+		<img src="server.jpg" alt="server ding">
+		<p id="huis">
+</picture>
+
+<BR></BR><BR>
+</div>
+<div id="vlek2">
+	<a href="https://twitter.com/intent/tweet?screen_name=ColicssHosting&ref_src=twsrc%5Etfw" class="twitter-mention-button" data-show-count="false">Tweet to @ColicssHosting</a>
+	<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+		<picture>
+			<a href= "https://nl-nl.facebook.com/coli.css.92" target="_blank"> 
+			<img src="facebok.jpg" alt="veesbenk" style= "height: 50px; width: 120px;"
+			<p id="vasbonk"> </a>
+		</picture>
+		<picture>
+			<a href= "https://www.instagram.com/acolico4/" target="_blank">
+			<img src="instagram.jpg" alt="instagram"style= "height: 50px; width: 120px;">
+			<p id="insta">
+		</picture>
+</div>
+<script>
+ var modal = document.getElementById('myModal');
+
+ var img = document.getElementById('myImg');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+ var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+</script>
+
+	</BODY>
+	<script type="text/javascript">
+		function smiley(){
+			knop.innerHTML= ":)"
+		}
+	</script>
+	</HTML>
